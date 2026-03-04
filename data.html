@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List</title>
+    <link href="https://fonts.cdnfonts.com/css/solaimanlipi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+
+    <header class="toolbar">
+        <button onclick="history.back()" class="back-btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <span id="toolbar_title">স্মার্ট নারায়ণগঞ্জ</span>
+    </header>
+
+    <div class="main-content">
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="সার্চ করুন" onkeyup="filterData()">
+        </div>
+
+        <div id="shimmerLayout" class="shimmer-container">
+            <div class="shimmer-item"></div>
+            <div class="shimmer-item"></div>
+            <div class="shimmer-item"></div>
+        </div>
+
+        <div id="listview1" class="list-container">
+            </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>

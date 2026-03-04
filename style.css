@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #009688;
+    font-family: 'SolaimanLipi', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* স্ক্রিনের একদম মাঝখানে কন্টেন্ট রাখবে */
+    width: 100%;
+    height: 100vh;
+}
+
+.spacer {
+    /* ফ্লেক্সিবল স্পেসার সরিয়ে দিয়েছি যেন টেক্সট নিচে না চলে যায় */
+    display: none; 
+}
+
+.logo-container {
+    padding: 8px;
+    margin-bottom: 20px; /* লোগো থেকে লোডারের দূরত্ব */
+}
+
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #009688;
+    object-fit: cover;
+    box-shadow: 0 0 0 3px #009688;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px; /* লোগোর নিচে গ্যাপ তৈরি করবে */
+}
+
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px; /* লোডার থেকে টেক্সটের দূরত্ব ১০ পিক্সেল */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#appname {
+    color: #FFFFFF !important;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px; /* android:layout_marginBottom="10dp" */
+    padding: 8px;
+    text-align: center;
+    font-family: 'SolaimanLipi', sans-serif;
+    min-height: 1.5em;
+}
